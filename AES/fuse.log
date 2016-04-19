@@ -1,0 +1,59 @@
+Running: /opt/software/xilinx/14.2/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/testbench_isim_beh.exe -prj /home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/testbench_beh.prj work.testbench work.glbl 
+ISim P.28xd (signature 0x54af6ca1)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/sub_bytes.v" into library work
+Analyzing Verilog file "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/sub_bytes_four.v" into library work
+Analyzing Verilog file "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/rotate_words.v" into library work
+Analyzing Verilog file "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/rcon.v" into library work
+Analyzing Verilog file "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/seq_xor.v" into library work
+Analyzing Verilog file "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/g_module.v" into library work
+Analyzing Verilog file "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/gfmult.v" into library work
+Analyzing Verilog file "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/sub_bytes_r.v" into library work
+Analyzing Verilog file "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/shift_rows.v" into library work
+Analyzing Verilog file "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/round_xor.v" into library work
+Analyzing Verilog file "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/mix_col.v" into library work
+Analyzing Verilog file "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/h_module.v" into library work
+Analyzing Verilog file "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/round.v" into library work
+Analyzing Verilog file "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/Last_round.v" into library work
+Analyzing Verilog file "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/key_expander.v" into library work
+Analyzing Verilog file "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/testbench.v" into library work
+Analyzing Verilog file "/opt/software/xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:329 - "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/testbench.v" Line 83: Target <cipher_text> of concurrent assignment or output port connection should be a net type.
+WARNING:HDLCompiler:189 - "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/sub_bytes_r.v" Line 37: Size mismatch in connection of port <sub_round_in>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/sub_bytes_r.v" Line 38: Size mismatch in connection of port <sub_round_out>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/sub_bytes_r.v" Line 44: Size mismatch in connection of port <sub_round_in>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/sub_bytes_r.v" Line 45: Size mismatch in connection of port <sub_round_out>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/sub_bytes_r.v" Line 51: Size mismatch in connection of port <sub_round_in>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/sub_bytes_r.v" Line 52: Size mismatch in connection of port <sub_round_out>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/sub_bytes_r.v" Line 58: Size mismatch in connection of port <sub_round_in>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "/home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/sub_bytes_r.v" Line 59: Size mismatch in connection of port <sub_round_out>. Formal port size is 4-bit while actual signal size is 1-bit.
+Completed static elaboration
+Fuse Memory Usage: 94952 KB
+Fuse CPU Usage: 920 ms
+Compiling module rotate_words
+Compiling module sub_bytes
+Compiling module sub_bytes_four
+Compiling module rcon
+Compiling module g_module
+Compiling module seq_xor
+Compiling module h_module
+Compiling module key_expander
+Compiling module round_xor
+Compiling module sub_bytes_r
+Compiling module shift_rows
+Compiling module gfmult
+Compiling module mix_col
+Compiling module round
+Compiling module last_round
+Compiling module testbench
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 17 Verilog Units
+Built simulation executable /home/A01519795/Documents/Graduate/Spring2016/ECE6470/Project/verilog/AES/testbench_isim_beh.exe
+Fuse Memory Usage: 1179812 KB
+Fuse CPU Usage: 1010 ms
+GCC CPU Usage: 1230 ms
