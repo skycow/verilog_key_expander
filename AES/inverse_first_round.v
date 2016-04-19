@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    14:59:15 04/19/2016 
+// Create Date:    16:25:59 04/19/2016 
 // Design Name: 
-// Module Name:    Last_round 
+// Module Name:    inverse_first_round 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,23 +18,21 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module last_round(
+module inverse_first_round(
     input [127:0] round_in,
-    input [127:0] key_in1,
-    input [127:0] key_in2,
+    input [127:0] key_in,
     output [127:0] round_out
     );
+	
+	wire [127:0] con1;
+	wire [127:0] con2;
+	wire [127:0] con3;
+	
+	round_xor round_xor_i(round_in, key_in, con1);
+	inverse_shift_rows inverse_shift_rows_i(con1,con2);
+	inverse_sub_bytes_r inverse_sub_bytes_r_i(con2,con3);
+	
+	assign round_out = con3;
+	
 
-	wire [127:0] xor_result;
-	wire [127:0] subBytes_result;
-	wire [127:0] shift_result;
-	wire [127:0] result;
-	
-	round_xor xor1(round_in, key_in1, xor_result);
-	sub_bytes_r sub(xor_result, subBytes_result);
-	shift_rows shift(subBytes_result, shift_result);
-	round_xor xor2(shift_result, key_in2, result);
-	
-	assign round_out[127:0] = result[127:0];
-	
 endmodule
