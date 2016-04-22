@@ -30,8 +30,7 @@ module testbench;
 	wire [127:0] cipher_text;
 	wire [127:0] plain_text;
 
-	Encryption uut1(message, cipher_key, cipher_text);
-	Decryption uut2(cipher_text, cipher_key, plain_text);
+	AES aes_mod(message, cipher_text, cipher_key, plain_text, cipher_text);
 	
 	initial begin
 		// Initialize Inputs

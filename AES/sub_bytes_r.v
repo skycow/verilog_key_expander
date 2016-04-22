@@ -27,35 +27,35 @@ module sub_bytes_r(
 	 wire [31:0]temp2;
 	 wire [31:0]temp3;
 	 wire [31:0]temp4;
-	 wire z1;
-	 wire z2;
-	 wire z3;
-	 wire z4;
+	 wire [3:0] z1;
+	 wire [3:0] z2;
+	 wire [3:0] z3;
+	 wire [3:0] z4;
 
 sub_bytes_four sub_bytes_four_1(
 	.sub_four_in(sub_r_in[127:96]),
-	.sub_round_in(1'd0),
+	.sub_round_in(4'd0),
 	.sub_round_out(z1),
 	.sub_four_out(temp1)
 	);
 	
 sub_bytes_four sub_bytes_four_2(
 	.sub_four_in(sub_r_in[95:64]),
-	.sub_round_in(1'd0),
+	.sub_round_in(4'd0),
 	.sub_round_out(z2),
 	.sub_four_out(temp2)
 	);
 
 sub_bytes_four sub_bytes_four_3(
 	.sub_four_in(sub_r_in[63:32]),
-	.sub_round_in(1'd0),
+	.sub_round_in(4'd0),
 	.sub_round_out(z3),
 	.sub_four_out(temp3)
 	);
 
 sub_bytes_four sub_bytes_four_4(
 	.sub_four_in(sub_r_in[31:0]),
-	.sub_round_in(1'd0),
+	.sub_round_in(4'd0),
 	.sub_round_out(z4),
 	.sub_four_out(temp4)
 	);

@@ -19,10 +19,10 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module inverse_sub_bytes_four(
-    input [32:0] sub_four_in,
+    input [31:0] sub_four_in,
     input [3:0] sub_round_in,
     output [3:0] sub_round_out,
-    output reg [32:0] sub_four_out
+    output reg [31:0] sub_four_out
     );
 	 
 	 wire [7:0]temp1;
